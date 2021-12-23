@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic User Interactions</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h2>Dropdown</h2>
+        <p>It visually sucks at the moment, styling is hard</p>
+        <div class="navbar">
+            <ul>
+                <li>
+                    Stuff
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">More Stuff</a></li>
+                            <li><a href="#">More Stuff</a></li>
+                            <li><a href="#">More Stuff</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Other Stuff
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">More Stuff</a></li>
+                            <li><a href="#">More Stuff</a></li>
+                            <li><a href="#">More Stuff</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Even More Stuff
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">More Stuff</a></li>
+                            <li><a href="#">More Stuff</a></li>
+                            <li><a href="#">More Stuff</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <h2>Mobile Menu</h2>
+        <p>Kept it really simple here, its essentially just a scuffed version of the Facebook mobile menu</p>
+        <div class="mobile-menu">
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <i class="fas fa-house-user"></i>
+                        Home
+                    </li>
+                    <li>
+                        <i class="fas fa-newspaper"></i>
+                        News
+                    </li>
+                    <li>
+                        <span class="notification">2</span>
+                        <i class="fas fa-comment"></i>
+                        Messages
+                    </li>
+                    <li>
+                        <i class="fas fa-user-cog"></i>
+                        Settings
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Image Slider</h2>
+        <p>Now this one... was a bit tough, and I'm sure my implementation is fundamentally flawed in some way, but after spending several hours trying to put this together I'm happy with it.</p>
+        <div class="carousel-container">
+            <div class="carousel">    
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1640102371408-5fc0c42a8792?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="A cool wallpaper background by Maxim Burg">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1640114198747-fa498a232dd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="A cool wallpaper background by 
+                    Marek Piwnicki">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1632494424962-ca0fb15099dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1519&q=80" alt="A cool wallpaper background by NIKHIL KESHARWANI">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="">
+                </div>
+            </div>
+
+            <div class="radio-buttons">
+
+            </div>
+
+            <div class="buttons">
+                <button class="previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        
+        <script src="./main.js"></script>
+    </body>
+</html>
