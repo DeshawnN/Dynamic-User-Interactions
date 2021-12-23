@@ -1,0 +1,139 @@
+.navbar {
+    background-color: rgb(0, 67, 143);
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+li {
+    display: block;
+    position: relative;
+}
+
+.dropdown {
+    visibility: hidden;
+    transition: all 0.3s;
+    position: absolute;
+    top: calc(100% + .25rem);
+    left: 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.dropdown li {
+    padding: 5px 0;
+}
+
+.dropdown ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dropdown li {
+    width: max-content;
+}
+
+.mobile-menu {
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+}
+
+.mobile-menu .navbar {
+    border-radius: 8px;
+}
+
+.mobile-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    opacity: 0.5;
+    color: black;
+    transition: opacity ease-in-out 0.15s;
+    cursor: pointer;
+}
+
+.mobile-menu li:hover {
+    opacity: 1;
+    color: white;
+}
+
+.notification {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    color: white;
+    border: 1px solid white;
+    background-color: orange;
+    padding: 2px 6px;
+    transform: scale(0.75, 0.75);
+    border-radius: 4px;
+}
+
+
+.visible {
+    visibility: visible;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.slide img {
+    width: 800px;
+    height: 100%;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons {
+    position: relative;
+    bottom: 0%;
+}
+
+.carousel-container button {
+    display: inline-block;
+    position:relative;
+    height: 60px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 24px;
+}
+
+.carousel-container input[type="radio"] {
+    transform: scale(1.5, 1.5);
+    margin: 15px;
+}
+
+.previous {
+    right: 1%;
+}
+
+.next {
+    left: 1%;
+}
+
+.slide {
+    transition: all ease-in-out 2s;
+}
